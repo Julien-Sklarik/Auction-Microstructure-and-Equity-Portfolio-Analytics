@@ -26,53 +26,33 @@ Auctions average stop out by month
 Portfolio cumulative return
 ![Cumulative](reports/figures/portfolio_cumulative_return_2022.png)
 
-## Structure at a glance
-
-repo root
-• README.md
-• LICENSE
-• requirements.txt
-• .gitignore
-• data
-  • external
-    • treasury_auctions_2022_embedded.json
-  • inputs
-    • prices.xlsx
-    • eps_estimates_override.csv
-    • starting_positions.csv
-• src
-  • amepa
-    • __init__.py
-    • auctions.py
-    • portfolio.py
-    • plotting.py
-    • io_helpers.py
-• scripts
-  • run_auctions_pipeline.py
-  • run_portfolio_pipeline.py
-• reports
-  • figures
-  • tables
-• tests
-  • test_auctions_basic.py
-  • test_portfolio_basic.py
 
 ## Methods in one page
 
-Auctions
 • Normalize the raw payload into a stable schema with cusip security_type security_term term_months auction_date issue_date maturity_date offering_amount total_tenders total_accepted bid_to_cover_ratio high_discount_rate high_yield price stop_out_rate
+
 • Coerce dates and numerics and filter to Bills and Notes in calendar 2022
+
 • Define term_months from tenor text for sorting and grouping
+
 • Primary key candidates used in joins
+
   • cusip with auction_date
+  
   • If cusip is missing then composite of security_type security_term auction_date issue_date
+  
 • Group by month and security_type then export summary series and plots
 
 Portfolio
+
 • Positions come from a small CSV with side and shares
+
 • Prices come from a local Excel sheet with an optional Notes column for dividends
+
 • Splits adjust shares forward from the split date so that market value is continuous
+
 • Dividends apply as cash flows on the ex date with the correct sign for long and short
+
 • Daily total return equals total PnL divided by prior day market value
 
 ## Reproducible outputs
