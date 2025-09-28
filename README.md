@@ -1,6 +1,6 @@
 # Auction Microstructure and Equity Portfolio Analytics
 
-I packaged two pieces of my work into a lean project that is easy to run and review. The goal is to show impact on both market microstructure and equity portfolio accounting without classroom flavor.
+I packaged two pieces of my work into a lean project. The goal is to show impact on both market microstructure and equity portfolio accounting.
 
 ## What this project delivers
 
@@ -92,8 +92,3 @@ Portfolio
 • reports tables portfolio_drivers.csv
 • reports figures portfolio_cumulative_return_2022.png
 
-## Notes for reviewers
-
-• This repo favors reproducible scripts and tidy artifacts over long notebooks
-• The auctions snapshot keeps the project offline friendly and is easily replaced with the API
-• All paths are relative and the code is dependency light
