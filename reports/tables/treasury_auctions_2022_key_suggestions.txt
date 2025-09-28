@@ -1,0 +1,3 @@
+Primary key candidates
+  • (cusip, auction_date) unique for competitive rows
+  • If cusip missing use composite (security_type, security_term, auction_date, issue_date)

@@ -1,0 +1,17 @@
+{
+  "cusip": "string",
+  "security_type": "category",
+  "security_term": "category",
+  "term_months": "float64",
+  "auction_date": "datetime64[ns]",
+  "issue_date": "datetime64[ns]",
+  "maturity_date": "datetime64[ns]",
+  "offering_amount": "int64",
+  "total_tenders": "int64",
+  "total_accepted": "int64",
+  "bid_to_cover_ratio": "float64",
+  "high_discount_rate": "float64",
+  "high_yield": "float64",
+  "price": "float64",
+  "stop_out_rate": "float64"
+}
