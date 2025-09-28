@@ -60,15 +60,24 @@ Portfolio
 Runs write artifacts into reports tables and figures so a reviewer can open results without running notebooks.
 
 Auctions
+
 • reports tables treasury_auctions_2022_parsed.csv
+
 • reports tables treasury_auctions_2022_dtype_suggestions.json
+
 • reports tables treasury_auctions_2022_key_suggestions.txt
+
 • reports figures auction_avg_stop_out_bills_2022.png
+
 • reports figures auction_avg_stop_out_notes_2022.png
 
 Portfolio
+
 • reports tables portfolio_daily_pnl.xlsx
+
 • reports tables portfolio_eps_snapshots.csv
+
 • reports tables portfolio_drivers.csv
+
 • reports figures portfolio_cumulative_return_2022.png
 
